@@ -10,14 +10,14 @@ pipeline {
         }
         
         stage('Test') {
-            seps {
+            steps {
                 sh './385'
             }
         }
         
         stage('Deploy') {
             steps {
-                echo 'Deployment successfully'
+                eho 'Deployment successfully'
             }
         }
     }
